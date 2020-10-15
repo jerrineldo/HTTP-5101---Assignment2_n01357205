@@ -37,7 +37,10 @@ namespace HTTP_5101_Assignment2_n01357205.Controllers
                             counter++;
                     }
                 }
-                return "There are " + counter + " total ways to get the sum 10.";
+                if( counter ==1 )
+                    return "There is " + counter + " way to get the sum 10.";
+                else
+                    return "There are " + counter + " total ways to get the sum 10.";
             }
             else
             {
